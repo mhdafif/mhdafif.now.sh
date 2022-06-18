@@ -158,7 +158,10 @@ export const styles = (theme: Theme) => createStyles({
       border: `7px solid ${borderGray}`,
       overflow: 'hidden',
       margin: '0 auto',
-      cursor: 'pointer'
+      cursor: 'pointer',
+      '& img': {
+        transform: 'translate(-27px, 77px) scale(3)'
+      }
     },
     '& .nav-image-theme': {
       position: 'absolute',
@@ -776,6 +779,12 @@ export const styles = (theme: Theme) => createStyles({
           '& .react-icon': {
             color: '#00d8ff'
           },
+          '& .vue-icon': {
+            color: '#42b883'
+          },
+          '& .next-icon': {
+            color: '#000'
+          },
         }
       },
       '& .skill-detail': {
@@ -914,6 +923,7 @@ export const styles = (theme: Theme) => createStyles({
     padding: '15px',
     '& img': {
       width: '100%',
+      transform: 'scale(1.5)'
     },
     '&:before, &:after': {
       content: `''`,

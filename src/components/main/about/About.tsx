@@ -1,19 +1,17 @@
-import React from 'react'
-import { WithStyles, withStyles, Grid } from '@material-ui/core';
-import { styles } from 'styles';
-import myPict from 'image/foto.jpg';
-import ZoomInIcon from '@material-ui/icons/ZoomIn';
+import React from "react";
+import { WithStyles, withStyles, Grid } from "@material-ui/core";
+import { styles } from "styles";
+import myPict from "image/foto2.jpg";
+// import ZoomInIcon from "@material-ui/icons/ZoomIn";
 import moment from "moment";
-import PaletteIcon from '@material-ui/icons/Palette';
-import CodeIcon from '@material-ui/icons/Code';
-import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
-import { FaInfoCircle } from 'react-icons/fa';;
+import PaletteIcon from "@material-ui/icons/Palette";
+import CodeIcon from "@material-ui/icons/Code";
+import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
+import { FaInfoCircle } from "react-icons/fa";
 
 interface Props {}
 
-type AllProps 
-  = WithStyles<typeof styles>
-  & Props;
+type AllProps = WithStyles<typeof styles> & Props;
 
 const AboutComp: React.FC<AllProps> = (props) => {
   const { classes } = props;
@@ -34,40 +32,67 @@ const AboutComp: React.FC<AllProps> = (props) => {
             <Grid container spacing={3}>
               <Grid item xs={12} lg={6}>
                 <div className={classes.aboutImage}>
-                  <span className='blue-border-1' />
-                  <img alt="about" src={myPict} />
-                  <span className='blue-border-2' />
-                  {
-                    process.env.REACT_APP_TYPE === 'develop' &&
-                    <span className='about-image-zoom'>
+                  <span className="blue-border-1" />
+                  <div style={{overflow: 'hidden'}}>
+                    <img alt="about" src={myPict} />
+                  </div>
+                  <span className="blue-border-2" />
+                  {/* {process.env.REACT_APP_TYPE === "develop" && (
+                    <span className="about-image-zoom">
                       <ZoomInIcon />
                     </span>
-                  }
+                  )} */}
                 </div>
               </Grid>
               <Grid item xs={12} lg={6}>
                 <div className={classes.aboutContent}>
-                  <h3>I am <span className={classes.colorTheme}>Muhammad Afif</span></h3>
+                  <h3>
+                    I am{" "}
+                    <span className={classes.colorTheme}>Muhammad Afif</span>
+                  </h3>
                   <p>
-                  i'm a Front End Developer specialize in React. I can provide clean code and responsive for your demands. I also can make website more interactive with web animations. I currently interested in React and Typescript but i can adapt to new technology.
+                    I'm an engineer who specializes in front end web
+                    applications. I can provide clean code and responsive for
+                    desktop and mobile. I also make website more interactive
+                    with animations. I'm interested in React and Vue but
+                    possible to adapt with a new technology.
                   </p>
                   <ul>
-                    <li><b>Full Name</b>Muhammad Afif</li>
-                    <li><b>Age</b>{moment().diff('1994-08-09', 'years')} Years</li>
-                    <li><b>Languages</b>Sundanese, Bahasa, English</li>
-                    <li><b>Address</b>Super Puma Raya no 9, Cimahi Selatan</li>
-                    <li><b>Freelance</b>
+                    <li>
+                      <b>Full Name</b>Muhammad Afif
+                    </li>
+                    <li>
+                      <b>Age</b>
+                      {moment().diff("1994-08-09", "years")} Years
+                    </li>
+                    <li>
+                      <b>Languages</b>Sundanese, Bahasa, English
+                    </li>
+                    <li>
+                      <b>Address</b>Super Puma Raya no 9, Cimahi Selatan
+                    </li>
+                    <li>
+                      <b>Freelance</b>
                       <p>
-                        Available 
-                        <FaInfoCircle className={showInfo ? 'active' : ''} 
-                          onMouseEnter={() => setShowInfo(true)} 
-                          onMouseLeave={() => setShowInfo(false)} 
+                        Available
+                        <FaInfoCircle
+                          className={showInfo ? "active" : ""}
+                          onMouseEnter={() => setShowInfo(true)}
+                          onMouseLeave={() => setShowInfo(false)}
                         />
-                        <span className={showInfo ? 'active' : ''}>You can contact me if there's a good opportunity. Thanks!</span>
+                        <span className={showInfo ? "active" : ""}>
+                          You can contact me if there's a good opportunity.
+                          Thanks!
+                        </span>
                       </p>
                     </li>
                   </ul>
-                  <a className={classes.button} href={process.env.PUBLIC_URL + '/Muhammad Afif - CV.pdf'} rel="noopener noreferrer" target="_blank">
+                  <a
+                    className={classes.button}
+                    href={process.env.PUBLIC_URL + "/Mhd Afif - CV.pdf"}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
                     Download CV
                   </a>
                 </div>
@@ -76,7 +101,7 @@ const AboutComp: React.FC<AllProps> = (props) => {
           </Grid>
         </Grid>
       </div>
-      
+
       {/* Services */}
       <div className={classes.servicesArea}>
         <Grid container className={classes.container2}>
@@ -112,17 +137,19 @@ const AboutComp: React.FC<AllProps> = (props) => {
                     <PhoneAndroidIcon />
                   </div>
                   <h5>Responsive</h5>
-                  <p>Provide responsive up-to-date style for your desktop or mobile.</p>
+                  <p>
+                    Provide responsive up-to-date style for your desktop or
+                    mobile.
+                  </p>
                 </div>
               </Grid>
             </Grid>
           </Grid>
         </Grid>
       </div>
-      
+
       {/* Review */}
-      {
-        process.env.REACT_APP_TYPE === 'develop' &&
+      {process.env.REACT_APP_TYPE === "develop" && (
         <div className={classes.reviewArea}>
           <Grid container className={classes.container2}>
             <Grid item xs={10} lg={8}>
@@ -136,8 +163,11 @@ const AboutComp: React.FC<AllProps> = (props) => {
                 <Grid item xs={6}>
                   <div className={classes.reviewItem}>
                     <div className="review-item-content">
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita impedit nobis tempore quaerat quibusdam, aliquid maxime tempora.</p>
-
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Expedita impedit nobis tempore quaerat quibusdam,
+                        aliquid maxime tempora.
+                      </p>
                     </div>
                     <div className="reivew-item-author">
                       <h5>Burdette Turner</h5>
@@ -148,8 +178,11 @@ const AboutComp: React.FC<AllProps> = (props) => {
                 <Grid item xs={6}>
                   <div className={classes.reviewItem}>
                     <div className="review-item-content">
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita impedit nobis tempore quaerat quibusdam, aliquid maxime tempora.</p>
-
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Expedita impedit nobis tempore quaerat quibusdam,
+                        aliquid maxime tempora.
+                      </p>
                     </div>
                     <div className="reivew-item-author">
                       <h5>Burdette Turner</h5>
@@ -161,9 +194,9 @@ const AboutComp: React.FC<AllProps> = (props) => {
             </Grid>
           </Grid>
         </div>
-      }
+      )}
     </React.Fragment>
-  )
-}
+  );
+};
 
 export const About = withStyles(styles)(AboutComp);

@@ -1,7 +1,7 @@
 import React from 'react'
 import { WithStyles, withStyles, Avatar, IconButton } from '@material-ui/core';
 import { styles } from 'styles';
-import avatar from 'image/avatar.jpg';
+import avatar from 'image/foto2.jpg';
 import { ThemeContext } from 'context/theme/themeContext';
 import MoonIcon from '@material-ui/icons/NightsStay';
 import SunIcon from '@material-ui/icons/WbSunny';
