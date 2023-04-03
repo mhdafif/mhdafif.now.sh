@@ -29,7 +29,7 @@ export default {
       detail: ["Lifecycle", "Slots", "Vuex", "Etc..."],
     },
     {
-      name: "Next JS",
+      name: "Nuxt JS",
       detail: ["Route", "Layout", "Error", "Etc..."],
     },
   ],
@@ -39,10 +39,10 @@ export default {
       position: "Frontend Developer",
       company: "Ultra Voucher",
       jobdesk: [
-        "Developed and implemented software solutions based on client requirements",
-        "Developed and implemented design UI/X from figma to our application",
-        "Design unit testing for the components",
-        "Maintenance and update existing application with a new feature",
+        "Effectively implement client feedback",
+        "Maintaining products to ensure optimal performance",
+        "Applying UI/UX design from Figma to applications",
+        "Optimize applications based on Lighthouse assessment",
       ],
     },
     {
@@ -50,11 +50,11 @@ export default {
       position: "Frontend Developer",
       company: "Prospace",
       jobdesk: [
-        "Developed and implemented software solutions based on client feedback",
+        "Designs and creates software solutions to solve pain points for various type of clients",
         "Tested and refined software prior to roll out",
         "Design unit testing for the components",
         "In charge of release the application to production",
-        "Create UI Framework",
+        "Create UI Framework and release to NPM",
       ],
     },
     {
@@ -62,10 +62,10 @@ export default {
       position: "Frontend Developer",
       company: "Xsis Mitra Utama",
       jobdesk: [
-        "Re build Employee Self Service Application from webform to micro service with React",
+        "Re build Employee Self Service Application from webform to micro service with React Typescript",
         "Maintenance Employee Self Service Application",
         "Fixing bug in existing Employee Self Service website",
-        "Add a new feature to the application",
+        "Add new features and modules to the Application",
       ],
     },
   ],
