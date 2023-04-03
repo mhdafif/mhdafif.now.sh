@@ -76,13 +76,12 @@ const HomeComp: React.FC<AllProps> = (props) => {
         <Grid item xs={10} lg={8} className="xxs">
           <div className={classes.homeContent}>
             <h1>
-              Hi, I am <span className={classes.colorTheme}>Muhammad Afif</span>
+              Hi, I am <span className={classes.colorTheme}>Afif</span>
             </h1>
             <p>
-              I'm an engineer who specializes in front end web applications. I
-              can provide clean code and responsive for desktop and mobile. I
-              also make website more interactive with animations. I'm interested
-              in React and Vue but possible to adapt with a new technology
+              A frontend developer with half a decade of experience, I have a
+              proven track record of creating web applications using a variety
+              of technologies
             </p>
             <ul className={classes.homeSocial}>
               <li>

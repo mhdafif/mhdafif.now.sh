@@ -33,7 +33,7 @@ const AboutComp: React.FC<AllProps> = (props) => {
               <Grid item xs={12} lg={6}>
                 <div className={classes.aboutImage}>
                   <span className="blue-border-1" />
-                  <div style={{overflow: 'hidden'}}>
+                  <div style={{ overflow: "hidden" }}>
                     <img alt="about" src={myPict} />
                   </div>
                   <span className="blue-border-2" />
@@ -47,15 +47,15 @@ const AboutComp: React.FC<AllProps> = (props) => {
               <Grid item xs={12} lg={6}>
                 <div className={classes.aboutContent}>
                   <h3>
-                    I am{" "}
-                    <span className={classes.colorTheme}>Muhammad Afif</span>
+                    I am <span className={classes.colorTheme}>Afif</span>
                   </h3>
                   <p>
-                    I'm an engineer who specializes in front end web
-                    applications. I can provide clean code and responsive for
-                    desktop and mobile. I also make website more interactive
-                    with animations. I'm interested in React and Vue but
-                    possible to adapt with a new technology.
+                    As a frontend developer with half a decade of experience, I
+                    have a proven track record of creating web applications
+                    using a variety of technologies such as React, Vue,
+                    Typescript, and others. I have a strong focus on providing
+                    clean and maintainable code, and I am adept at creating unit
+                    tests to ensure the quality of my work.
                   </p>
                   <ul>
                     <li>
@@ -89,7 +89,7 @@ const AboutComp: React.FC<AllProps> = (props) => {
                   </ul>
                   <a
                     className={classes.button}
-                    href={process.env.PUBLIC_URL + "/Mhd Afif - CV.pdf"}
+                    href={process.env.PUBLIC_URL + "/Muhammad Afif - CV.pdf"}
                     rel="noopener noreferrer"
                     target="_blank"
                   >

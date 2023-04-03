@@ -11,7 +11,7 @@ import {
   FaBriefcase,
   FaGraduationCap,
 } from "react-icons/fa";
-import { SiNextdotjs, SiVuedotjs } from "react-icons/si";
+import { SiNuxtdotjs, SiVuedotjs } from "react-icons/si";
 import resumeData from "./data";
 
 interface Props {}
@@ -43,8 +43,8 @@ const ResumeComp: React.FC<AllProps> = (props) => {
       case "Vue":
         return <SiVuedotjs className="svg-icon vue-icon" />;
 
-      case "Next JS":
-        return <SiNextdotjs className="svg-icon next-icon" />;
+      case "Nuxt JS":
+        return <SiNuxtdotjs className="svg-icon nuxt-icon" />;
 
       default:
         return;
